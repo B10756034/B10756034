@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資料型態轉換</title>
+    <script>
+        var anumber;
+        var bnumber;
+        var cnumber;
+        var dnumber;
+        anumber = prompt("請輸入數字A:");
+        document.write("<h1>數字A(轉換前)(" + anumber + "):" + typeof(anumber) + "<br>");
+        bnumber = parseFloat(anumber);
+        document.write("<h1>數字A(轉換後)(" + bnumber + "):" + typeof(bnumber) + "<p>");
+        cnumber = prompt("請輸入數字B:");
+        document.write("<h1>數字B(轉換前)(" + cnumber + "):" + typeof(cnumber) + "<br>");
+        dnumber = parseFloat(cnumber);
+        document.write("<h1>數字B(轉換後)(" + dnumber + "):" + typeof(dnumber) + "<p>");
+
+        document.write("<h1>" + (anumber + "+" + cnumber) + "=" + (bnumber + dnumber));
+        document.write("<h1>" + (anumber + "-" + cnumber) + "=" + (bnumber - dnumber));
+        document.write("<h1>" + (anumber + "*" + cnumber) + "=" + (bnumber * dnumber));
+        document.write("<h1>" + (anumber + "/" + cnumber) + "=" + (bnumber / dnumber));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
