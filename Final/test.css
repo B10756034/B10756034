@@ -1,0 +1,75 @@
+/*table表格設定*/
+.table-wrapper {
+    margin: 50px;
+    box-shadow: 0px 35px 50px rgba(27, 31, 49, 0.1);
+    display: block;/*變區塊自動判斷寬度並加入水平橫軸，*/    
+    overflow-x: auto;
+    white-space: nowrap;/*文字不會斷行*/
+}  
+  .table {    
+    border-collapse: collapse;/*separate表格會有空白*/
+    width: 100%;
+    background-color: white;    
+  }  
+  .table td,.table th {
+    text-align: center;
+    padding: 10px;
+  }  
+  .table td {/*除了第一行，欄之間畫右邊2px虛線*/
+    border-right: 2px dashed black;
+  }  
+  .table thead th {/*thead裡的th，還未變成RWD*/
+    color: brown;/*第一行所有字體顏色*/
+    background: lightpink; /* 第1個標題顏色 */
+  }
+  .table thead th:nth-child(2){
+    background: lightgoldenrodyellow; /* 指定第2個標題顏色 */
+  }
+  .table thead th:nth-child(3){
+    background: lightblue; /* 指定第3個標題顏色 */
+  }
+  .table thead th:nth-child(4) {
+    background: lightgray; /* 指定第4個標題顏色 */
+  }
+  .table ul {/*  table ul*/
+    padding: 20px;
+    margin: 0;/*水平置中*/
+    text-align: left;/*字靠左*/
+  }
+  .table ul li {
+    border-bottom: 1px solid red;/*li底線為紅*/
+    padding: 5px;
+    position: relative;/*相對定位於父元素*/
+    list-style-type: circle;/*把項目符號改為圓形*/
+  }
+  @media (max-width: 600px) {/*螢幕畫面小於450，則套用以下CSS*/
+    .table-wrapper {
+      margin: 30px 15px;      
+    }  
+    .table thead {
+      display: none;/*不顯示原本第1行*/
+    }  
+    .table td {
+      display: block; /*重要！把td變區塊 */
+      padding: 0;
+    }
+    .table td:before {
+      content: attr(data-title); /* 顯示 data-title */
+      display: inline-block;/*較好排版，水平排列*/
+      width: 100%;
+      font-weight: 500;
+      padding: 6px 0;
+      color: white;
+      background: pink; /* 指定第一個標題顏色 */
+    }    
+    .table td:nth-child(2):before {
+      background: yellow; /* 指定第二個標題顏色 */
+    }  
+    .table td:nth-child(3):before {
+      background: blue; /* 指定第三個標題顏色 */
+    }  
+    .table td:nth-child(4):before {
+      background: gray; /* 指定第四個標題顏色 */
+    }
+  }
+  
