@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--用utf8編碼方式讀中文-->
+        <meta charset="UTF-8"/><!--後不加字 可省略/meta-->
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+        <title>教學2</title>
+        <link rel="stylesheet" href="test.css">
+    </head>
+    <body>
+    <hr/>
+    <p>用 data title實現RWD表格</p>
+    <br/>
+    <div class="table-wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>類型</th>
+              <th>內容</th>
+              <th>補充說明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-title="日期">
+                <ul>
+                  <li>2021/03/01</li>
+                  <li>2020/04/17</li>
+                  <li>2019/12/11</li>
+                </ul>
+              </td>
+              <td data-title="類型">
+                <ul>
+                  <li>比賽</li>
+                  <li>證照</li>
+                  <li>比賽</li>
+                  
+                </ul>
+              </td>
+              <td data-title="內容">
+                <ul>
+                  <li>創意創新比賽</li>
+                  <li>會計師證照</li>
+                  <li>程式設計比賽</li>
+                  
+                </ul>
+              </td>
+              <td data-title="補充說明">
+                <ul>
+                  <li>佳作</li>
+                  <li>人工乙/丙級</li>
+                  <li>季軍</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+    <div class="href1">         
+        <a href="page3.html" style="float: right;">第三頁</a>
+        <a href="index.html">上一頁</a>   
+    </div>
+    </body>
+</html>

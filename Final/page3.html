@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--用utf8編碼方式讀中文-->
+        <meta charset="UTF-8"/><!--後不加字 可省略/meta-->
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+        <title>教學3</title>
+        <link rel="stylesheet" href="test3.css">
+    </head>
+    <body>
+    <hr/>
+    <p>用 data title實現RWD表格</p>
+    <br/>
+    <div class="table-wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>姓名</th>
+              <th>照片</th>
+              <th>電話</th>
+              <th>年級</th>
+              <th>自我介紹</th>
+              <th>證照/比賽日期</th>
+              <th>證照/比賽</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-title="姓名">
+                <ul>
+                  <li>歐小馬</li>
+                </ul>
+              </td>
+              <td data-title="照片">
+                  <ul>
+                      <li><img src="head.jpg" width="60px"/>
+                      </li>
+                  </ul>
+                
+              </td>
+              <td data-title="電話">
+                <ul>
+                  <li>0912345678</li>
+                  
+                </ul>
+              </td>
+              <td data-title="年級">
+                <ul>
+                  <li>資管4A</li>
+                  
+                </ul>
+              </td>
+              <td data-title="自我介紹">
+                <ul>
+                  <li>我喜歡打程式，絕對真心</li>
+                </ul>
+              </td>
+              <td data-title="證照/比賽日期">
+                <ul>
+                  <li>2019/12/11</li>
+                  <li>2020/04/17</li>
+                  <li>2021/03/01</li>
+                </ul>
+              </td>
+              <td data-title="證照/比賽">
+                <ul>
+                  <li>創意創新比賽-佳作</li>
+                  <li>會計師證照-人工乙/丙級</li>
+                  <li>程式設計比賽-季軍</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+      <div class="href1">         
+        <a href="page2.html" style="float: left;">上一頁</a>
+        <a href="index.html"style="float: right;">回首頁</a>   
+    </div>
+    </body>
+</html>
